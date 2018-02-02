@@ -1,6 +1,12 @@
+#include <vector>
+#include <iostream>
 class bubble{
 private:
-  int toSort[];
+vector<int> toSort;
 public:
-  int sort(int );
+  bubble(vector<int> unsorted):unsorted(toSort){  }
+  int sort(vector<int> toSort);
+  void print(cout out){
+    
+  }
 };

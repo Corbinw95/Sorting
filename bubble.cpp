@@ -2,16 +2,16 @@
 #include bubble.hpp
 
 //Sort integers with bubble Sort
-int sort(int toSort[]){
+vetor<int> sort(vector<int> toSort){
   int swap;
-  for(int i = 0; i < toSort.length();i++){
-    for(int k = 1;k < toSort.length();k++){
+  for(int i = 0; i < toSort.size();i++){
+    for(int k = 1;k < toSort.size();k++){
       if(toSort[i]>toSort[k]){
-        swap = toSort[k];
-        toSort[i] = toSort[k];
-        toSort[i] = swap;
+        swap = toSort.at(k);
+        toSort.at(k) = toSort.at(i);
+        toSort.at(i) = swap;
       }
     }
   }
-  return toSort[];
+  return toSort;
 }
