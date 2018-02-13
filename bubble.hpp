@@ -1,9 +1,6 @@
 #ifndef BUBBLE
 #define BUBBLE
 
-#include <vector>
-#include <iostream>
-
 class bubble{
 private:
 vector<int> toSort;
