@@ -3,12 +3,10 @@
 
 class bubble{
 private:
-vector<int> toSort;
+std::vector<int> toSort;
 public:
-  bubble(vector<int> unsorted):unsorted(toSort){  }
-  int sort(vector<int> toSort);
-  void print(cout out){
-
-  }
+  bubble(std::vector<int> unsorted){toSort = unsorted;}
+  std::vector<int> sort();
+  void print(std::vector<int> sorted);
 };
 #endif
