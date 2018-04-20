@@ -1,7 +1,10 @@
-#include bubble.hpp
+#include <vector>
+#include <iostream>
+
+#include "bubble.hpp"
 
 //Sort integers with bubble Sort
-vetor<int> sort(vector<int> toSort){
+std::vector<int> bubble::sort(){
   int swap;
   for(int i = 0; i < toSort.size();i++){
     for(int k = 1;k < toSort.size();k++){
@@ -13,4 +16,10 @@ vetor<int> sort(vector<int> toSort){
     }
   }
   return toSort;
+}
+
+void bubble::print(std::vector<int> sorted){
+  for(int i = 0;i < sorted.size();i++){
+    std::cout << sorted.at(i);
+  }
 }
