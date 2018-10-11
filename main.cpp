@@ -1,11 +1,23 @@
-#include <random>
+#include <cstdlib>
+#include <ctime>
+#include <iostream>
+#include <vector>
 #include "bubble.hpp"
 
-using namespace std;
-
 int main(){
-  vector<int> unsorted;
+  int dataSetSize = 10;
+  std::vector<int> unsorted;
+
+  //create unsorted integers by generating random numbers
+  srand(time(0));
+  for(int i = 0; i < dataSetSize; i++ ){
+    unsorted.push_back(rand());
+    std::cout << "instered: " << unsorted.at(i) << std::endl;
+
+  }
+
   bubble bsort(unsorted);
-  bsort.print(bsort.sort());
+  bsort.sort();
+  bsort.print();
   return 0;
 }
